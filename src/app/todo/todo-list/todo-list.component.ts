@@ -72,12 +72,7 @@ export class TodoListComponent implements OnInit {
   }
 
   sortByColumn(sortOption: string) {
-    if(sortOption === 'name') {
-      this.todos.sort((a: any, b: any) => (a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : -1)
-    } else if(sortOption === 'status') {
-      this.todos.sort((a: any, b: any) => (a.status > b.status) ? 1 : -1)
-    } else {
-      this.todos.sort((a: any, b: any) => (a.date > b.date) ? 1 : -1)
-    }
+    sortOption === 'name' ? this.todos.sort((a: any, b: any) => (a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : -1) :
+    sortOption === 'status' ? this.todos.sort((a: any, b: any) => (a.status > b.status) ? 1 : -1) : this.todos.sort((a: any, b: any) => (a.date > b.date) ? 1 : -1)
   }
 }
