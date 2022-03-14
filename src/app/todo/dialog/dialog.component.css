@@ -1,0 +1,23 @@
+.taskForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.full-width {
+  width: 30%;
+}
+
+#dialogForm {
+  margin-bottom: 50px;
+  height: 100px;
+}
+
+.matError {
+  margin: -8px 0 !important;
+}
+
+mat-dialog-container {
+  margin: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+#container {
+  max-width: 600px;
+  padding: 0 10px 10px 10px;
+  margin: 100px auto;
+  border-radius: 4px;
+}
+
+mat-card-header {
+  padding: 0px;
+  background-color: rgb(0, 60, 255);
+  display: flex;
+  justify-content: center;
+}
+
+mat-card-title {
+  padding: 10px 0;
+  color: antiquewhite;
+}
+
+.taskForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.full-width {
+  width: 25%;
+}
+
+.full-width:first-child{
+  line-height: 27px;
+}
+
+.status {
+  line-height: 27px;
+}
+
+ul.listTodos {
+  list-style: none;
+}
+
+.liItem {
+  border: 1px solid gainsboro;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.editItem {
+  color: gray;
+  cursor: pointer;
+}
+
+.deleteItem {
+  cursor: pointer;
+  color: red;
+}
+
+.filterStatus {
+  margin: 0px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
